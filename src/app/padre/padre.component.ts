@@ -8,14 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class PadreComponent implements OnInit {
 
   texto: String = "";
+  claseCodigo: String;
 
-  constructor() { }
+  constructor() { 
+    this.claseCodigo = "";
+  }
 
   ngOnInit(): void {
     
   }
 
   enviarTextoHijo(valorBtn: String) {
+    this.claseCodigo = valorBtn;
     this.texto = "Has pulsado el btn: " + valorBtn;
   }
 }
