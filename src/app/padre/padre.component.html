@@ -1,5 +1,5 @@
-<button (click)="enviarTextoHijo(uno.innerText)" #uno>Uno</button>
-<button (click)="enviarTextoHijo(dos.innerText)" #dos>Dos</button>
-<button (click)="enviarTextoHijo(tres.innerText)" #tres>Tres</button>
+<button id="1" (click)="enviarTextoHijo(uno)" #uno>Uno</button>
+<button id="2" (click)="enviarTextoHijo(dos)" #dos>Dos</button>
+<button id="3" (click)="enviarTextoHijo(tres)" #tres>Tres</button>
 <h1>Has pulsado el botón:</h1>
-<app-hijo [texto]="texto"></app-hijo>
+<app-hijo [texto]="texto" [idBtn]="id"></app-hijo>

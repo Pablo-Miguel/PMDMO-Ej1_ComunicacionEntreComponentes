@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HijoComponent implements OnInit {
 
   @Input() texto!: String;
+  @Input() idBtn!: String;
 
   constructor() { }
 

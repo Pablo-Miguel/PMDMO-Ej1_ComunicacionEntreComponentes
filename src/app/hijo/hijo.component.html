@@ -1,5 +1,9 @@
-<h1 [ngClass]="{
-    'Uno': texto === 'Uno',
-    'Dos': texto === 'Dos',
-    'Tres': texto === 'Tres'
-}">{{texto}}</h1>
+<h1
+  [ngClass]="{
+    uno: idBtn === '1',
+    dos: idBtn === '2',
+    tres: idBtn === '3'
+  }"
+>
+  {{ texto }}
+</h1>
